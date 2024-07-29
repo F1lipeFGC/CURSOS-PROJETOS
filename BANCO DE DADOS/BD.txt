@@ -1,0 +1,26 @@
+/****** Object:  Table [DS211000].[pc_clientes]    Script Date: 19/10/2022 16:07:09 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE bd_exemplo(
+	codcli int IDENTITY(1,1) NOT NULL,
+	nome nvarchar(50) NULL,
+	endereco nvarchar(50) NULL,
+	cidade nvarchar(30) NULL,
+	bairro nvarchar(30) NULL,
+	uf nvarchar(2) NULL,
+	cep nvarchar(8) NULL,
+	telefone nvarchar(11) NULL,
+	datanasc datetime NULL,
+PRIMARY KEY CLUSTERED 
+(
+	codcli ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON PRIMARY
+) ON PRIMARY
+
+GO
+
+

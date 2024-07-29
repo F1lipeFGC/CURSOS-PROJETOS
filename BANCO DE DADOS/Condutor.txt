@@ -1,0 +1,17 @@
+CREATE TABLE tbl_CONDUTOR(
+	con_CNH INT PRIMARY KEY,
+    con_NOME VARCHAR (100),
+    car_PLACA VARCHAR(8) NULL);
+    
+INSERT INTO tbl_condutor 
+VALUES('6712321', 'João', '2123FS'),
+	  ('7821782', 'Marcelo', '921HNK'),
+      ('562GFG1', 'Stephano','78812GIO'),
+      ('7712713', 'Lauro', '78238GJI'),
+      ('8990389','Daniel Alves', 'PIOT7812'),
+      ('8249345','Alex','OAJ78182'),
+      ('1231233','Junior','OQI9253'),
+      ('3864827','Kaique','KAS0858'),
+      ('8237127','Foguiça','OPA9288'),
+      ('6238729','Davigol','GOL53879');
+      

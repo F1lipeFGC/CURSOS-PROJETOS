@@ -1,0 +1,42 @@
+create database escola;
+
+create table tbl_aluno(
+	nome_aluno VARCHAR (50) NOT NULL,
+	CPF_aluno INT PRIMARY KEY NOT NULL,
+	RG_aluno INT NOT NULL,
+	Idade_aluno DATE NOT NULL	
+);
+create table tbl_professor(
+	nome_professor VARCHAR(100) NOT NULL,
+	CPF_professor INT PRIMARY KEY NOT NULL,
+	RG_professor INT NOT NULL 
+);
+CREATE TABLE tbl_curso(
+	ID_curso INT PRIMARY KEY NOT NULL,
+	Nome_curso VARCHAR (50) NOT NULL,
+	Sigla_curso VARCHAR (30) NOT NULL
+);
+CREATE TABLE tbl_disciplina(
+	ID_disciplina INT PRIMARY KEY NOT NULL,
+	Nome_disciplina VARCHAR(50) NOT NULL,
+	Sigla_disciplina VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE tbl_estudo(
+	ID_estudo INT PRIMARY KEY NOT NULL,
+	Entrada_estudo DATE NOT NULL,
+	Saida_estudo DATE NOT NULL
+);
+
+ALTER TABLE tbl_aluno
+ ADD  CONSTRAINT FK__ID_curso FOREIGN KEY (ID_curso) REFERENCES tbl_curso (ID_curso)
+
+ALTER TABLE tbl_estuda
+ ADD  CONSTRAINT FK_CPF_aluno FOREIGN KEY(CPF_aluno) REFERENCES tbl_aluno (CPF_aluno),
+ ADD  CONSTRAINT FK_ID_discplina FOREIGN KEY(ID_disciplina) REFERENCES tbl_disciplina (ID_disciplina)
+
+
+ALTER TABLE [tbl_disciplina] 
+ ADD  CONSTRAINT [FK_ID_curso] FOREIGN KEY(ID_curso) REFERENCES tbl_curso (ID_curso),
+ ADD  CONSTRAINT [FK_CPF_professor] FOREIGN KEY(CPF_professor) REFERENCES tbl_professor (CPF_professor)
+
