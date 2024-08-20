@@ -5,4 +5,4 @@
  <img src="image.png" />
 
 
- <a>O diagrama UML foi criado para ilustrar a relação entre as interfaces e as classes. As interfaces (app de musica: Tocar();, Pausar();, selecionarMusica(); Telefone/Ligaçoes: Ligar(); Atender(); iniciarCorreioVoz(); e Navegador/Safari: exibirPagina(); adicionarNovaAba(); atualizarPagina();) definem as operações , enquanto as classes concretas (App de msuica/Apple Music, Telefone/Ligaçoes, Navegador/Safari) implementam essas operações. A classe IPhone atua como o ponto central que utiliza essas funcionalidades.</a>
+ <a>O diagrama UML foi criado para ilustrar a relação entre as interfaces e as classes. As interfaces (app de musica: Tocar();, Pausar();, selecionarMusica(); Telefone/Ligaçoes: Ligar(); Atender(); iniciarCorreioVoz(); e Navegador/Safari: exibirPagina(); adicionarNovaAba(); atualizarPagina();) definem as operações , enquanto as classes concretas (App de musica/Apple Music, Telefone/Ligaçoes, Navegador/Safari) implementam essas operações. A classe IPhone atua como o ponto central que utiliza essas funcionalidades.</a>
